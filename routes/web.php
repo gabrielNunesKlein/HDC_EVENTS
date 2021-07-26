@@ -17,7 +17,11 @@ Route::get('/', function () {
     $nome = "Gabriel";
     $idade = 22;
 
-    return view('welcome', ["nome" => $nome, "idade" => $idade, "profissao" => "Desenvolvedor PHP"]);
+    $array = [1, 2, 3, 4, 5, 6, 7];
+    $nomes = ["Gabriel", "Pedro", "Raisa", "Gabriela", "Carlos", "Kimberly"];
+
+    return view('welcome', ["nome" => $nome, "idade" => $idade, "profissao" => "Desenvolvedor PHP", 
+    "array" => $array, "nomes" => $nomes]);
 });
 
 Route::get('/contact', function(){
