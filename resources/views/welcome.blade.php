@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
 
-        <title>Laravel</title>
+@section('title', 'HDC events')
 
-        <link rel="stylesheet" href="/CSS/style.css">
-        <script src="/js/scripts.js"></script>
-    </head>
-    <body>
-        <h1>Algum título</h1>
-        <img src="/img/banner.jpg" alt="Banner"/>
+@section('content')
+<h1>Algum título</h1>
+<img src="/img/banner.jpg" alt="Banner"/>
         @if(10 > 9)
         <p>Verdadeiro</p>
         @else
@@ -38,5 +31,4 @@
             $nome = "Gabriel";
             echo $nome;
         @endphp
-    </body>
-</html>
+@endsection
