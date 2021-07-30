@@ -28,6 +28,6 @@ class EventController extends Controller
 
         $event->save(); //Salve evento no banco de dados
 
-        return redirect('/');
+        return redirect('/')->with('msg', 'Evento criado com sucesso!');
     }
 }
