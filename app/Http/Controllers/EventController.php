@@ -47,6 +47,11 @@ class EventController extends Controller
 
             $event->image = $imageName;
         }
+
+        //Obtendo usuário logado
+        $user = auth()->user();
+        $event->user_id = $user->id;
+
         $event->save(); //Salve evento no banco de dados
 
         return redirect('/')->with('msg', 'Evento criado com sucesso!');
