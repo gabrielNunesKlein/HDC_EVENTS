@@ -200,10 +200,13 @@ header{
     width: 25%;
 }
 
+.dashboard-events-container form {
+    display: inline-block;
+}
+
 .dashboard-events-container p {
     margin-bottom: 283px;
 }
-
 
 /* footer */
 
