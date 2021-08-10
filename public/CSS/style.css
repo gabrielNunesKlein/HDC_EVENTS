@@ -208,6 +208,13 @@ header{
     margin-bottom: 283px;
 }
 
+/*Edit page */
+
+.img-preview {
+    width: 100px;
+    margin-top: 20px;
+}
+
 /* footer */
 
 footer {
